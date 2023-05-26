@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.pfn-tooltip {
+  @apply opacity-100;
+}
+
+.pfn-tooltip .rc-tooltip-content {
+  @apply -translate-x-2;
+  @apply relative;
+}
+
+.pfn-tooltip .rc-tooltip-arrow {
+  @apply border-b-[#070B14];
+  @apply border-[9px];
+  @apply left-[19px];
+  @apply -top-[18px];
+}
+
+.pfn-tooltip .rc-tooltip-inner {
+  @apply bg-[#070B14];
+  @apply rounded-lg;
+  @apply px-4 py-3;
+  @apply w-full;
+  @apply max-w-[320px];
+  @apply text-sm;
+  @apply leading-5;
+  @apply tracking-[0.15px];
+}
+
+.pfn-tooltip__svg {
+  @apply border-4;
+  @apply border-transparent;
+  @apply cursor-help;
+}
+
+.pfn-tooltip__svg--rounded {
+  @apply rounded-full;
+}
+
+.pfn-tooltip__svg:hover {
+  @apply bg-[#070B14];
+  @apply bg-opacity-[0.16];
+}
